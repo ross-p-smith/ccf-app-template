@@ -1,9 +1,9 @@
-	#!/bin/bash
+#!/bin/bash
 set -euo pipefail
 
 declare CCF_DIR=CCF
 
-git -C ${CCF_DIR} pull || git clone --depth 1 https://github.com/microsoft/CCF.git ${CCF_DIR}
+git clone --depth 1 https://github.com/microsoft/CCF.git ${CCF_DIR} || git -C ${CCF_DIR} pull
 
 ./${CCF_DIR}/getting_started/setup_vm/run.sh ./${CCF_DIR}/getting_started/setup_vm/app-dev.yml
 

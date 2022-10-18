@@ -11,3 +11,7 @@ help: ## 💬 This help message :)
 install: ## 🔨 Install the CCF framework
 	@echo -e "\e[34m$@\e[0m" || true
 	@scripts/install.sh
+
+test: ## 🔨 Test the JS
+	@echo -e "\e[34m$@\e[0m" || true
+	@scripts/test.sh

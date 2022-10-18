@@ -3,6 +3,7 @@
   "dockerFile": "Dockerfile",
   "extensions": [
     "ms-vscode.cpptools",
-    "vsls-contrib.codetour"
+    "vsls-contrib.codetour",
+    "humao.rest-client"
   ]
 }
